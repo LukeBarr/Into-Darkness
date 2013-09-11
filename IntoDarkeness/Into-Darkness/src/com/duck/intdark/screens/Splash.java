@@ -50,8 +50,17 @@ public class Splash implements Screen {
 		splash.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		splash_music = Gdx.audio.newSound(Gdx.files
 				.internal("data/splash_music.mp3"));
-
+		//Apparently android needs a second to store mp3 in its RAM, if no break was taken 
+		//Sometimes it would play sometimes it wouldn't
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		}
+		
+		
+		
 		splash_music.play();
+
 		Tween.set(splash, SpriteAccessor.ALPHA).target(0).start(tweenManager);
 		Tween.to(splash, SpriteAccessor.ALPHA, 3).target(1).start(tweenManager);
 
