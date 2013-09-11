@@ -1,0 +1,34 @@
++-------------------------------------------------------------+
+| This will cover an implementation/pseudo code for the game. |
++-------------------------------------------------------------+
+
+
+-GAMEPLAY OVERVIEW:
+	-Concept: You are being chased by monsters/wolves/travellers/whatever and you have to run away based on the direction the sound appears to be coming from.
+	-Mostly black screen, earphones not required, but make the game better.
+	-Varying number of enemies, varying speeds, slower score increases increase difficulty.
+	-At most basic, enemies speed == 110% players speed with 2 enemies.
+
+-SOUND:
+	-Sounds always playing or at intervals?
+	-if multiple sounds can be played at once
+		-Have a sound per enemy, then set pan individually.
+	-else
+		-Find way to take average of enemies + locations.
+
+-SCREEN:
+	-Mostly black with small frame of vision or fully sighted so you can view enemies when they come close enough?
+	-Player sprite?
+
+-CONTROLS:
+	-Buttons on screen? Accelerometer? Touch left half of screen to turn left, right to turn right?
+	-Always running forward or manually move forward?
+
+-FUTURE IMPLEMENTATIONS:
+	-Have run/walk speeds?
+	-Allow player change settings for enemies/speeds etc
+	-"Power ups" e.g. freeze time for enemies, drop bomb, super speed, etc
+	-Game modes e.g. survival, increasing levels, lead enemies to traps, etc
+
+
+Edit at will
